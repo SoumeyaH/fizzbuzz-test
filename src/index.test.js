@@ -1,4 +1,4 @@
-import { projectName } from "./index";
+import { fizzBuzz, projectName } from "./index";
 
 describe("Starter project should", () => {
   it("output its name", () => {
@@ -9,5 +9,11 @@ describe("Starter project should", () => {
     const result = projectName();
 
     expect(result.length).toEqual(20);
+  });
+});
+
+describe("Fizzbuzz", () => {
+  it("should return fizz if the number is a multiple of 3", () => {
+    expect(fizzBuzz(3)).toEqual("fizz");
   });
 });
