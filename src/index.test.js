@@ -16,4 +16,11 @@ describe("Fizzbuzz", () => {
   it("should return fizz if the number is a multiple of 3", () => {
     expect(fizzBuzz(3)).toEqual("fizz");
   });
+  it("should return buzz if the number is a multiple of 5", () => {
+    expect(fizzBuzz(5)).toEqual("buzz");
+  });
+
+  it("should return fizzbuzz if the number is a multiple of 5 and 3", () => {
+    expect(fizzBuzz(15)).toEqual("fizzBuzz");
+  });
 });

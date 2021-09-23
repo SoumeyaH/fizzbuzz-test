@@ -3,9 +3,16 @@ export const projectName = () => {
 };
 
 export const fizzBuzz = (num) => {
+  if (num % 5 === 0 && num % 3 === 0) {
+    return "fizzBuzz";
+  }
   if (num % 3 === 0) {
     return "fizz";
   }
+  if (num % 5 === 0) {
+    return "buzz";
+  }
+
   // multiple of 3 - fizz
   // multiple of 5 - buzz
   // multiple of both - fizzbuzz
